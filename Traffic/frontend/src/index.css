@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-link {
+  margin-left: 50px;
+  color: #fff;
+}
+.active{
+  color:#fff;
+}
+.home {
+  margin-left: 500px;
+}
+
+.footer a{
+  line-height: 2;
+  text-decoration: none;
+  font-size: 18px;
+  color: #424242;
+}
+
+.footer p {
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: blue;
+}
+
+/* HomePage */
+
+.container_home {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.home_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home_col-4 {
+  flex: 1 1 30%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.home_img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home_img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .col-4 {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+.home_img {
+  border-radius: 15px;
+  height: 22rem;
+  width: 22rem;
+}
+
+/* about */
+.container_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f7;
+  height: 100%;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #222;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #555;
+  max-width: 800px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.videoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+video {
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  transition: box-shadow 0.3s ease;
+}
+
+video:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.additionalInfo {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 800px;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Support page */
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container_support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.heading {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.form:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.textarea {
+  min-height: 120px;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.thankYouMessage {
+  text-align: center;
+  padding: 30px;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.resetButton {
+  margin-top: 15px;
+  background-color: #28a745;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.resetButton:hover {
+  background-color: #218838;
+}
+/*----------- Dashboard ------------- --------- -----*/
+
+.dashboard {
+  text-align: center;
+}
+
+.road-container {
+  margin: 20px 0;
+}
+
+.road-image {
+  width: 80%; /* Set the width of the image */
+  height: 20rem; /* Maintain aspect ratio */
+  border: 2px solid #ccc; /* Optional: Add border to the image */
+  border-radius: 20px; /* Optional: Rounded corners */
+}
+
+.video-select {
+  margin: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  padding: 5px 20px;
+  font-size: 16px;
+  background-color: #37a0eb; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc; /* Disabled state color */
+}
+
+.loading-spinner {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack spinner and text vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100px; /* Set a height for the spinner container */
+  margin: 20px 0;
+}
+
+.spinner {
+  border: 4px solid rgba(22, 10, 10, 0.3);
+  border-left-color: #1905ff; /* Change color as needed */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.info-section {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.next-road-message {
+  margin-top: 20px;
+  color: rgb(45, 195, 80);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Add this CSS for spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
